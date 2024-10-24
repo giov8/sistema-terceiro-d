@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento com Radio Button</title>
+</head>
+<body>
+    <h2>Selecione uma página:</h2>
+    
+    <form id="formPaginas">
+        <label>
+            <input type="radio" name="pagina" value="home.html"> Página Inicial
+        </label><br>
+        <label>
+            <input type="radio" name="pagina" value="sobre.html"> Sobre Mim
+        </label><br>
+        <label>
+            <input type="radio" name="pagina" value="contato.html"> Contato
+        </label><br>
+        <button type="button" onclick="redirecionar()">Ir para a página</button>
+    </form>
+
+    <script>
+        function redirecionar() {
+            // Obtem todas as opções de radio button
+            const radios = document.querySelectorAll('input[name="pagina"]');
+            let paginaSelecionada = "";
+
+            // Verifica qual radio button está selecionado
+            for (const radio of radios) {
+                if (radio.checked) {
+                    paginaSelecionada = radio.value;
+                    break;
+                }
+            }
+
+            // Se uma página for selecionada, redireciona
+            if (paginaSelecionada) {
+                window.location.href = paginaSelecionada;
+            } else {
+                alert("Por favor, selecione uma página.");
+            }
+        }
+    </script>
+</body>
+</html>

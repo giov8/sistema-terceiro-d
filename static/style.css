@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.pag-inicial {
+    background-color: rgb(254, 254, 254);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 60px; 
+    border-radius: 60px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #063051;;
+}
+
+.pag-inicial img {
+    width: 250px;
+}
+
+.pag-inicial h1 {
+    color: #063051;
+    font-size: 40px;
+}
+
+.botoes a {
+    color: #DB2835;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #FFC43A;
+    width: 50%;
+    padding: 10px; /*adicionar enchimento no botão*/
+    border-radius: 15px; /*deixar botão redondo*/
+}
+
+.botoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+
+.botoes a:hover {
+   background-color: #FDA632;
+}
+
+body#index {
+    background-image: linear-gradient(135deg, #DB2835, #063051);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.tela-login {
+    display: flex; /* colocar divs uma do lado da outra*/
+}
+
+.tela-esquerda img {
+    height: 100vh; /*a altura da imagem é 100% a altura da tela*/
+}
+
+body {
+    margin: 0px; /*retira a margem padrão do HTML*/
+}
